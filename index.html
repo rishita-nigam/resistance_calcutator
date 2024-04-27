@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resistor Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resistor Calculator</h1>
+    <div class="calculator">
+      <div class="bands">
+        <h2>Select number of bands:</h2>
+        <select id="band-count">
+          <option value="4">4 Bands</option>
+          <option value="5">5 Bands</option>
+        </select>
+        <div class="band-colors"></div>
+      </div>
+      <div class="result">
+        <button onclick="calculateResistance()">Calculate</button>
+        <p id="resistance">Resistance: <span id="resistance-value">---</span> ohms</p>
+        <p id="tolerance">Tolerance: <span id="tolerance-value">---</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
